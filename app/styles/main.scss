@@ -1,0 +1,121 @@
+// bower:scss
+// endbower
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+.loe-move {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
+    .loe-content-wrap {
+        max-width: 724px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
+    .loe-moveitem {
+        float: left;
+        text-align: center;
+        width: 724px;
+        transition: transform .5s ease-out;
+
+        img{
+            max-width: 200px;
+            margin: auto;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            display: inline-block;
+            padding-left: 0;
+
+            li {
+                float: left;
+                margin: 0 23px;
+                height: 135px;
+                opacity: 1;
+
+                &.is-before {
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+                &.is-transition {
+                    transition: transform .5s,opacity .4s;
+                }
+                &.is-after {
+                    opacity: 0;
+                    transform: translateX(100px);
+                }
+
+                span {
+                    display: block;
+                    font-size: 12px;
+                    color: #666;
+                    padding-top: 15px;
+                }
+            }
+        }
+
+        &:after {
+            display: table;
+            content: ' ';
+            clear:both;
+        }
+    }
+    .content-list {
+        width: 724px;
+
+        &:after {
+            display: table;
+            content: ' ';
+            clear:both;
+        }
+    }
+    .loe-tab-wrap {
+        border-top: 1px solid #D6D6D6;
+        max-width: 980px;
+        margin: auto;
+        text-align: center;
+    }
+    .loe-tab {
+        display: inline-block;
+        position: relative;
+    }
+    .navcaret {
+        display: none;
+        width: 100px;
+        position: absolute;
+        border-top: 1px solid #333;
+        top: -1px;
+        z-index: 1;
+        transform-origin: 0 0;     
+        transition: all .3s ease-out;   
+
+        &.is-ready {
+            display: block;
+        }
+    }
+    .loe-tab a{
+        color: #333;
+        padding-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        display: block;
+        float: left;
+        font-size: 13px;
+        color: #999;
+
+        &.active {
+            color: #333;
+        }
+    }
+}
