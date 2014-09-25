@@ -1,112 +1,136 @@
-function Slider(classname){
-	var options = {
-		fluid: false,  //true or false 
-		trigger: 'click', //click or mouseover
-		direction: 'H'  //Horizontal or Vertical
-	}
-	this.init(classname);
+function KiwiSlider(classname,options){
+	this.init.call(this,classname,options);
 }
 
-Slider.prototype = {
-	init: function(classname){
+KiwiSlider.prototype = {
+	init: function(){
 		var _this = this;
-		_this.wrap = $('.'+classname);
-		_this.tab = _this.wrap.find('.kiwi-control');
-		_this.navcaret = _this.tab.find('.navcaret');
-		_this.list = _this.wrap.find('.kiwi-items');
-		_this.item = _this.list.find('.kiwi-item');
-		_this.index = 0;
-		_this.old_index = 0;
-		_this.static_width = 724;
-		_this.click_twice = false;
+		var kiwi,control,items;
+		var options = this.options = {
+			fluid: false,  //true or false 
+			trigger: 'click', //click or mouseover
+			direction: 'H'  //Horizontal or Vertical
+		}
 
-		//set index
-		_this.item.each(function(index){
+		$.extend(options,arguments[1]);
+
+		kiwi = $('.'+arguments[0]);
+		control = kiwi.find('.kiwi-control');
+		items = kiwi.find('.kiwi-items');
+
+		this.index = 0;
+		this.old_index = 0;
+		this.static_width = 724;
+		this.static_height = 170;
+		this.click_twice = false;
+		this.bool_h = this.options.direction == "V";
+		this.navcaret = control.find('.navcaret');
+		this.item = items.find('.kiwi-item');
+
+		//set items index and indicators index
+		this.item.each(function(index){
 			this.itemindex = index;
 		})
-		_this.tab.find('a').each(function(index){
+		control.find('a').each(function(index){
 			this.tabindex = index;
 		})
 
+		//initialize ul.kiwi-items width
+		if(options.direction == 'V'){
+			items.css({
+				height: _this.item.eq(0).height()*_this.item.length
+			})
+		}else{
+			items.css({
+				width: _this.item.eq(0).width()*_this.item.length
+			})
+		}
 
-		_this.list.css({
-			width: _this.item.eq(0).width()*_this.item.length
-		})
-		_this.tabchange(_this.tab);
-		_this.tab.find('a:first').trigger("click");
-		_this.navcaret.addClass("is-ready");
+		// bind control event
+		this.bindMoveHandler(control);
 
-		_this.transform(_this.item);
+		//actice first indicator
+		control.find('a:first').trigger(options.trigger);
+		//init navcatre
+		this.navcaret.addClass("is-ready");
+
+		this.initItemTransform(this.item);
 	},
-	transform: function(target){
+	initItemTransform: function(item){
 		var _this = this;
-		target.each(function(){
+		
+		item.each(function(){
 			if(this.itemindex !== 0){
-				_this.translate($(this),(1-this.itemindex)*_this.static_width);
+				_this.doTranslate($(this),(1-this.itemindex) * (_this.bool_h ? _this.static_height : _this.static_width) );
 			}else{
-				_this.translate($(this),0);
+				_this.doTranslate($(this),0);
 			}
 		})
 	},
-	translate:function(target,distance){
-		target.css({
-			'transform':'translateX('+distance+'px)',
-			'-webkit-transform':'translateX('+distance+'px)'
-		})
+	doTranslate:function(target,distance){
+		if(this.options.direction == "V"){
+			target.css({
+				'transform':'translateY('+distance+'px)',
+				'-webkit-transform':'translateY('+distance+'px)'
+			})
+		}else{
+			target.css({
+				'transform':'translateX('+distance+'px)',
+				'-webkit-transform':'translateX('+distance+'px)'
+			})
+		}
 	},
-	caretchange: function(left,scale){
+	caretMove: function(left,scale){
 		this.navcaret.css({
 			"transform": 'translateX('+left+'px) scaleX('+scale+')',
 			"-webkit-transform": 'translateX('+left+'px) scaleX('+scale+')'
 		})
 	},
-	itemchange:function(target,t,callback){
+	itemMove:function(target,t,callback){
 		var _this = this;
 
-		_this.translate(target, t * _this.static_width);
+		_this.doTranslate(target, t * (_this.bool_h ? _this.static_height : _this.static_width));
 		callback && callback();
 	},
-	tabchange:function(target){
+	bindMoveHandler:function(target){
 		var _this = this;
-		target.on('click','a',function(event){
-			event.stopPropagation();
-
+		target.on(_this.options.trigger,'a',function(event){
 			var w = $(this).width();
-			var currentoffset = $(this).offset();
-			var targetoffset = target.offset();
-			var left = currentoffset.left - targetoffset.left;
+			var current_offset = $(this).offset();
+			var control_offset = target.offset();
+			var left = current_offset.left - control_offset.left;
 			var scale = w/100;
-			var t = 0;
+			var d = 0; //index after move finished
 
 			_this.old_index = _this.index;
 			_this.index = this.tabindex;
 
 			if(_this.old_index > _this.index){
 				_this.click_twice = false;
-				t = 1-_this.old_index;
+				d = 1-_this.old_index;
 			}else if(_this.old_index < _this.index){
 				_this.click_twice = false;
-				t = -1-_this.old_index;
+				d = -1-_this.old_index;
 			}
 
 			if(!_this.click_twice){
 				var currentitem = _this.item.eq(_this.index);
 				var olditem = _this.item.eq(_this.old_index);
 
-				
-				_this.itemchange(currentitem,-_this.index,function(){
+				_this.itemMove(currentitem,-_this.index,function(){
 					var classname;
+
 					if(_this.old_index > _this.index){
-						classname = 'is-before';
+						classname = _this.bool_h ? 'is-before-v' : 'is-before';
 					}else{
-						classname = 'is-after';
+						classname = _this.bool_h ? 'is-after-v' : 'is-after';
 					}
 					_this.li_status(currentitem,classname);
 				});
 
-				_this.itemchange(olditem, t);
+				_this.itemMove(olditem, d);
 
-				_this.caretchange(left,scale);
+				_this.caretMove(left,scale);
 
 				$(this).addClass("active")
 					.siblings("a").removeClass("active");
@@ -128,7 +152,7 @@ Slider.prototype = {
 					that.removeClass(value)
 				},index*60)
 			}else{
-				var array = _this.range(0,li.length).reverse();
+				var array = _this.bool_h ? _this.range(0,li.length) : _this.range(0,li.length).reverse();
 				setTimeout(function(){
 					that.removeClass(value)
 				},array[index]*60)
@@ -145,4 +169,4 @@ Slider.prototype = {
 	}
 }
 
-new Slider('kiwi-slider')
+new KiwiSlider('kiwi-slider',{direction:'V'});

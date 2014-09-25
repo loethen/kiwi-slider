@@ -14,6 +14,7 @@ body {
 
     .kiwi-inner {
         max-width: 724px;
+        max-height: 170px;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
@@ -56,6 +57,16 @@ body {
                 &.is-after {
                     opacity: 0;
                     transform: translateX(100px);
+                    transition: none;
+                }
+                &.is-before-v {
+                    opacity: 0;
+                    transform: translateY(-100px);
+                    transition: none;
+                }
+                &.is-after-v {
+                    opacity: 0;
+                    transform: translateY(100px);
                     transition: none;
                 }
 
