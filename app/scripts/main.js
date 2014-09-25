@@ -1,4 +1,9 @@
 function Slider(classname){
+	var options = {
+		fluid: false,  //true or false 
+		trigger: 'click', //click or mouseover
+		direction: 'H'  //Horizontal or Vertical
+	}
 	this.init(classname);
 }
 
@@ -6,10 +11,10 @@ Slider.prototype = {
 	init: function(classname){
 		var _this = this;
 		_this.wrap = $('.'+classname);
-		_this.tab = _this.wrap.find('.loe-tab');
+		_this.tab = _this.wrap.find('.kiwi-control');
 		_this.navcaret = _this.tab.find('.navcaret');
-		_this.list = _this.wrap.find('.content-list');
-		_this.item = _this.list.find('.loe-moveitem');
+		_this.list = _this.wrap.find('.kiwi-items');
+		_this.item = _this.list.find('.kiwi-item');
 		_this.index = 0;
 		_this.old_index = 0;
 		_this.static_width = 724;
@@ -140,4 +145,4 @@ Slider.prototype = {
 	}
 }
 
-new Slider('loe-move')
+new Slider('kiwi-slider')

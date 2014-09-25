@@ -7,19 +7,19 @@ body {
     color: #333;
     -webkit-font-smoothing: antialiased;
 }
-.loe-move {
+.kiwi-slider {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
 
-    .loe-content-wrap {
+    .kiwi-inner {
         max-width: 724px;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
     }
 
-    .loe-moveitem {
+    .kiwi-item {
         float: left;
         text-align: center;
         width: 724px;
@@ -74,7 +74,7 @@ body {
             clear:both;
         }
     }
-    .content-list {
+    .kiwi-items {
         width: 724px;
 
         &:after {
@@ -83,15 +83,31 @@ body {
             clear:both;
         }
     }
-    .loe-tab-wrap {
+    .kiwi-indicators {
         border-top: 1px solid #D6D6D6;
         max-width: 980px;
         margin: auto;
         text-align: center;
     }
-    .loe-tab {
+    .kiwi-control {
         display: inline-block;
         position: relative;
+
+        a {
+            color: #333;
+            padding-top: 15px;
+            margin-left: 15px;
+            margin-right: 15px;
+            display: block;
+            float: left;
+            font-size: 13px;
+            color: #999;
+            text-decoration: none;
+
+            &.active {
+                color: #333;
+            }
+        }
     }
     .navcaret {
         display: none;
@@ -105,21 +121,6 @@ body {
 
         &.is-ready {
             display: block;
-        }
-    }
-    .loe-tab a{
-        color: #333;
-        padding-top: 15px;
-        margin-left: 15px;
-        margin-right: 15px;
-        display: block;
-        float: left;
-        font-size: 13px;
-        color: #999;
-        text-decoration: none;
-
-        &.active {
-            color: #333;
         }
     }
 }
