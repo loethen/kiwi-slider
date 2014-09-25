@@ -13,6 +13,7 @@ Slider.prototype = {
 		_this.index = 0;
 		_this.old_index = 0;
 		_this.static_width = 724;
+		_this.click_twice = false;
 
 		//set index
 		_this.item.each(function(index){
@@ -27,7 +28,7 @@ Slider.prototype = {
 			width: _this.item.eq(0).width()*_this.item.length
 		})
 		_this.tabchange(_this.tab);
-		_this.tab.find('a:first').trigger("mouseover");
+		_this.tab.find('a:first').trigger("click");
 		_this.navcaret.addClass("is-ready");
 
 		_this.transform(_this.item);
@@ -62,42 +63,51 @@ Slider.prototype = {
 	},
 	tabchange:function(target){
 		var _this = this;
-		target.on('mouseover','a',function(event){
+		target.on('click','a',function(event){
 			event.stopPropagation();
+
 			var w = $(this).width();
 			var currentoffset = $(this).offset();
 			var targetoffset = target.offset();
 			var left = currentoffset.left - targetoffset.left;
 			var scale = w/100;
+			var t = 0;
 
 			_this.old_index = _this.index;
 			_this.index = this.tabindex;
 
-			var currentitem = _this.item.eq(_this.index);
-			var olditem = _this.item.eq(_this.old_index);
-			var t = 0;
-
 			if(_this.old_index > _this.index){
+				_this.click_twice = false;
 				t = 1-_this.old_index;
-			}else{
+			}else if(_this.old_index < _this.index){
+				_this.click_twice = false;
 				t = -1-_this.old_index;
 			}
-			
-			_this.itemchange(currentitem,-_this.index,function(){
-				var classname;
-				if(_this.old_index > _this.index){
-					classname = 'is-before';
-				}else{
-					classname = 'is-after';
-				}
-				_this.li_status(currentitem,classname);
-			});
-			_this.itemchange(olditem, t);
 
-			_this.caretchange(left,scale);
+			if(!_this.click_twice){
+				var currentitem = _this.item.eq(_this.index);
+				var olditem = _this.item.eq(_this.old_index);
 
-			$(this).addClass("active")
-				.siblings("a").removeClass("active");
+				
+				_this.itemchange(currentitem,-_this.index,function(){
+					var classname;
+					if(_this.old_index > _this.index){
+						classname = 'is-before';
+					}else{
+						classname = 'is-after';
+					}
+					_this.li_status(currentitem,classname);
+				});
+
+				_this.itemchange(olditem, t);
+
+				_this.caretchange(left,scale);
+
+				$(this).addClass("active")
+					.siblings("a").removeClass("active");
+
+				_this.click_twice = true;
+			}
 
 		})
 	},
@@ -111,12 +121,12 @@ Slider.prototype = {
 			if(value == "is-after"){
 				setTimeout(function(){
 					that.removeClass(value)
-				},index*100)
+				},index*60)
 			}else{
 				var array = _this.range(0,li.length).reverse();
 				setTimeout(function(){
 					that.removeClass(value)
-				},array[index]*100)
+				},array[index]*60)
 			}
 		})
 	},
