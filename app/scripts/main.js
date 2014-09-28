@@ -12,6 +12,14 @@ KiwiSlider.prototype = {
 			direction: 'H'  //Horizontal or Vertical
 		}
 
+		var touch_support = !!(("ontouchstart" in window) || window.DocumentTouch && document instanceof window.DocumentTouch);
+
+		if(touch_support){
+			$('html').addClass("touch");
+			return;
+		}
+
+
 		$.extend(options,arguments[1]);
 
 		kiwi = $('.'+arguments[0]);
@@ -169,4 +177,4 @@ KiwiSlider.prototype = {
 	}
 }
 
-new KiwiSlider('kiwi-slider',{direction:'V'});
+new KiwiSlider('kiwi-slider',{direction:'H'});

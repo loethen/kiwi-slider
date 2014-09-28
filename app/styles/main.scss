@@ -6,6 +6,8 @@ body {
     font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
     color: #333;
     -webkit-font-smoothing: antialiased;
+    margin:0;
+    padding:0;
 }
 .kiwi-slider {
     overflow: hidden;
@@ -132,6 +134,42 @@ body {
 
         &.is-ready {
             display: block;
+        }
+    }
+}
+html.touch {
+    @media only screen and (max-width: 767px) {
+        .kiwi-slider {
+            height: 135px;
+            max-width: 100%;
+
+            .kiwi-inner {
+                overflow: scroll;
+                width: 100%;
+            }
+            .kiwi-items {
+                width: auto;
+                max-width: 100%;
+                white-space: nowrap;
+
+                .kiwi-item {
+                    width: auto;
+                    display: inline-block;
+                    float: none;
+
+                    ul {
+                        white-space: nowrap;
+
+                        li {
+                            float: none;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        } 
+        .kiwi-indicators {
+            display: none;
         }
     }
 }
