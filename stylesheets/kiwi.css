@@ -1,0 +1,250 @@
+/* line 4, ../../app/styles/main.scss */
+
+body {
+  background: #fafafa;
+  font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 12, ../../app/styles/main.scss */
+
+.kiwi-slider {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 17, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-inner {
+  max-width: 724px;
+  max-height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+/* line 25, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item {
+  float: left;
+  text-align: center;
+  width: 724px;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+}
+
+/* line 31, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item img {
+  max-width: 200px;
+  margin: auto;
+}
+
+/* line 35, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 40, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item ul {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+}
+
+/* line 45, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item ul li {
+  float: left;
+  margin: 0 23px;
+  height: 135px;
+  opacity: 1;
+}
+
+/* line 51, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item ul li.is-before {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+  transform: translateX(-100px);
+  transition: none;
+}
+
+/* line 56, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item ul li.is-transition {
+  transition: -webkit-transform .5s,opacity .4s;
+  transition: transform .5s,opacity .4s;
+}
+
+/* line 59, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item ul li.is-after {
+  opacity: 0;
+  -webkit-transform: translateX(100px);
+  transform: translateX(100px);
+  transition: none;
+}
+
+/* line 64, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item ul li.is-before-v {
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  transition: none;
+}
+
+/* line 69, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item ul li.is-after-v {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  transform: translateY(100px);
+  transition: none;
+}
+
+/* line 75, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item ul li span {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  padding-top: 15px;
+}
+
+/* line 84, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-item:after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+
+/* line 90, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-items {
+  width: 724px;
+}
+
+/* line 93, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-items:after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+
+/* line 99, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-indicators {
+  border-top: 1px solid #D6D6D6;
+  max-width: 980px;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 105, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-control {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 109, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-control a {
+  color: #333;
+  padding-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: block;
+  float: left;
+  font-size: 13px;
+  color: #999;
+  text-decoration: none;
+}
+
+/* line 120, ../../app/styles/main.scss */
+
+.kiwi-slider .kiwi-control a.active {
+  color: #333;
+}
+
+/* line 125, ../../app/styles/main.scss */
+
+.kiwi-slider .navcaret {
+  display: none;
+  width: 100px;
+  position: absolute;
+  border-top: 1px solid #333;
+  top: -1px;
+  z-index: 1;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  transition: all .3s ease-out;
+}
+
+/* line 135, ../../app/styles/main.scss */
+
+.kiwi-slider .navcaret.is-ready {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 142, ../../app/styles/main.scss */
+
+  html.touch .kiwi-slider {
+    height: 135px;
+    max-width: 100%;
+  }
+
+  /* line 146, ../../app/styles/main.scss */
+
+  html.touch .kiwi-slider .kiwi-inner {
+    overflow: scroll;
+    width: 100%;
+  }
+
+  /* line 150, ../../app/styles/main.scss */
+
+  html.touch .kiwi-slider .kiwi-items {
+    width: auto;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+
+  /* line 155, ../../app/styles/main.scss */
+
+  html.touch .kiwi-slider .kiwi-items .kiwi-item {
+    width: auto;
+    display: inline-block;
+    float: none;
+  }
+
+  /* line 160, ../../app/styles/main.scss */
+
+  html.touch .kiwi-slider .kiwi-items .kiwi-item ul {
+    white-space: nowrap;
+  }
+
+  /* line 163, ../../app/styles/main.scss */
+
+  html.touch .kiwi-slider .kiwi-items .kiwi-item ul li {
+    float: none;
+    display: inline-block;
+  }
+
+  /* line 171, ../../app/styles/main.scss */
+
+  html.touch .kiwi-indicators {
+    display: none;
+  }
+}
