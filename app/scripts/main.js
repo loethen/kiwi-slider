@@ -177,4 +177,4 @@ KiwiSlider.prototype = {
 	}
 }
 
-new KiwiSlider('kiwi-slider',{direction:'H'});
+new KiwiSlider('kiwi-slider',{direction:'V'});
