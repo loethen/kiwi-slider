@@ -1,7 +1,7 @@
 kiwi-slider
 ===========
 
-A javascript slider effect
+An Apple like javascript slider effect
 
 
 
