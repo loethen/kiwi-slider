@@ -16,7 +16,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
+#kiwi-slider2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 /* line 17, ../../app/styles/main.scss */
 
 .kiwi-slider .kiwi-inner {
