@@ -44,7 +44,7 @@ body {
 
             li {
                 float: left;
-                margin: 0 23px;
+                margin: 0 10px;
                 height: 135px;
                 opacity: 1;
 
@@ -172,4 +172,312 @@ html.touch {
             display: none;
         }
     }
+}
+figure {
+    margin: 0 auto;
+}
+
+.ac-familybrowser-item.macbook .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbook_large.svg");
+    background-size: 46px 54px;
+    height: 54px;
+    width: 46px
+}
+
+html.no-svg .ac-familybrowser-item.macbook .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbook_large.png");
+    background-size: 46px 54px;
+    height: 54px;
+    width: 46px
+}
+
+.ac-familybrowser-theme-dark .ac-familybrowser-item.macbook .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbook_dark_large.svg");
+    background-size: 46px 54px;
+    height: 54px;
+    width: 46px
+}
+
+html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbook_dark_large.png");
+    background-size: 46px 54px;
+    height: 54px;
+    width: 46px
+}
+
+.ac-familybrowser-item.macbook-air {
+    padding-left: 18px;
+    padding-right: 18px
+}
+
+.ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookair_large.svg");
+    background-size: 52px 54px;
+    height: 54px;
+    width: 52px
+}
+
+html.no-svg .ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookair_large.png");
+    background-size: 52px 54px;
+    height: 54px;
+    width: 52px
+}
+
+.ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookair_dark_large.svg");
+    background-size: 52px 54px;
+    height: 54px;
+    width: 52px
+}
+
+html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookair_dark_large.png");
+    background-size: 52px 54px;
+    height: 54px;
+    width: 52px
+}
+
+.ac-familybrowser-item.macbook-pro {
+    padding-left: 18px;
+    padding-right: 18px
+}
+
+.ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookpro_large.svg");
+    background-size: 58px 54px;
+    height: 54px;
+    width: 58px
+}
+
+html.no-svg .ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookpro_large.png");
+    background-size: 58px 54px;
+    height: 54px;
+    width: 58px
+}
+
+.ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookpro_dark_large.svg");
+    background-size: 58px 54px;
+    height: 54px;
+    width: 58px
+}
+
+html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookpro_dark_large.png");
+    background-size: 58px 54px;
+    height: 54px;
+    width: 58px
+}
+
+.ac-familybrowser-item.imac {
+    padding-left: 22px;
+    padding-right: 22px
+}
+
+.ac-familybrowser-item.imac .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/imac_large.svg");
+    background-size: 48px 54px;
+    height: 54px;
+    width: 48px
+}
+
+html.no-svg .ac-familybrowser-item.imac .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/imac_large.png");
+    background-size: 48px 54px;
+    height: 54px;
+    width: 48px
+}
+
+.ac-familybrowser-theme-dark .ac-familybrowser-item.imac .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/imac_dark_large.svg");
+    background-size: 48px 54px;
+    height: 54px;
+    width: 48px
+}
+
+html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.imac .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/imac_dark_large.png");
+    background-size: 48px 54px;
+    height: 54px;
+    width: 48px
+}
+
+.ac-familybrowser-item.mac-pro {
+    padding-left: 18px;
+    padding-right: 18px
+}
+
+.ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macpro_large.svg");
+    background-size: 21px 54px;
+    height: 54px;
+    width: 21px
+}
+
+html.no-svg .ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macpro_large.png");
+    background-size: 21px 54px;
+    height: 54px;
+    width: 21px
+}
+
+.ac-familybrowser-theme-dark .ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macpro_dark_large.svg");
+    background-size: 21px 54px;
+    height: 54px;
+    width: 21px
+}
+
+html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macpro_dark_large.png");
+    background-size: 21px 54px;
+    height: 54px;
+    width: 21px
+}
+
+.ac-familybrowser-item.mac-mini {
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+.ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macmini_large.svg");
+    background-size: 28px 54px;
+    height: 54px;
+    width: 28px
+}
+
+html.no-svg .ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macmini_large.png");
+    background-size: 28px 54px;
+    height: 54px;
+    width: 28px
+}
+
+.ac-familybrowser-theme-dark .ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macmini_dark_large.svg");
+    background-size: 28px 54px;
+    height: 54px;
+    width: 28px
+}
+
+html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macmini_dark_large.png");
+    background-size: 28px 54px;
+    height: 54px;
+    width: 28px
+}
+
+.ac-familybrowser-item.accessories .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_acc_large.svg");
+    background-size: 28px 54px;
+    height: 54px;
+    width: 28px
+}
+
+html.no-svg .ac-familybrowser-item.accessories .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_acc_large.png");
+    background-size: 29px 54px;
+    height: 54px;
+    width: 29px
+}
+
+.ac-familybrowser-theme-dark .ac-familybrowser-item.accessories .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_acc_dark_large.svg");
+    background-size: 29px 54px;
+    height: 54px;
+    width: 29px
+}
+
+html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.accessories .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_acc_dark_large.png");
+    background-size: 29px 54px;
+    height: 54px;
+    width: 29px
+}
+
+.ac-familybrowser-item.osx {
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+.ac-familybrowser-item.osx .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_osx_large.svg");
+    background-size: 30px 54px;
+    height: 54px;
+    width: 30px
+}
+
+html.no-svg .ac-familybrowser-item.osx .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_osx_large.png");
+    background-size: 30px 54px;
+    height: 54px;
+    width: 30px
+}
+
+.ac-familybrowser-theme-dark .ac-familybrowser-item.osx .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_osx_dark_large.svg");
+    background-size: 30px 54px;
+    height: 54px;
+    width: 30px
+}
+
+html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.osx .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_osx_dark_large.png");
+    background-size: 30px 54px;
+    height: 54px;
+    width: 30px
+}
+
+.ac-familybrowser-item.compare {
+    padding-left: 18px;
+    padding-right: 18px
+}
+
+.ac-familybrowser-item.compare .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_comp_large.svg");
+    background-size: 70px 54px;
+    height: 54px;
+    width: 70px
+}
+
+html.no-svg .ac-familybrowser-item.compare .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_comp_large.png");
+    background-size: 70px 54px;
+    height: 54px;
+    width: 70px
+}
+
+.ac-familybrowser-theme-dark .ac-familybrowser-item.compare .ac-familybrowser-icon {
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_comp_dark_large.svg");
+    background-size: 70px 54px;
+    height: 54px;
+    width: 70px
+}
+
+html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.compare .ac-familybrowser-icon {
+    background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_comp_dark_large.png");
+    background-size: 70px 54px;
+    height: 54px;
+    width: 70px
 }
