@@ -9,6 +9,9 @@ body {
   padding: 0;
 }
 
+.hidden {
+  visibility: hidden;
+}
 /* line 12, ../../app/styles/main.scss */
 
 .kiwi-slider {
@@ -263,7 +266,7 @@ figure {
 
 .ac-familybrowser-item.macbook .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbook_large.svg");
+  background-image: url("https://via.placeholder.com/48x54");
   background-size: 46px 54px;
   height: 54px;
   width: 46px;
@@ -272,7 +275,7 @@ figure {
 /* line 188, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-item.macbook .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbook_large.png");
+  background-image: url("https://via.placeholder.com/48x54");
   background-size: 46px 54px;
   height: 54px;
   width: 46px;
@@ -282,7 +285,7 @@ html.no-svg .ac-familybrowser-item.macbook .ac-familybrowser-icon {
 
 .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbook_dark_large.svg");
+  background-image: url("https://via.placeholder.com/48x54");
   background-size: 46px 54px;
   height: 54px;
   width: 46px;
@@ -291,7 +294,7 @@ html.no-svg .ac-familybrowser-item.macbook .ac-familybrowser-icon {
 /* line 203, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbook_dark_large.png");
+  background-image: url("https://via.placeholder.com/46x54");
   background-size: 46px 54px;
   height: 54px;
   width: 46px;
@@ -308,7 +311,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook .ac-fami
 
 .ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookair_large.svg");
+  background-image: url("https://via.placeholder.com/52x54");
   background-size: 52px 54px;
   height: 54px;
   width: 52px;
@@ -317,7 +320,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook .ac-fami
 /* line 223, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookair_large.png");
+  background-image: url("https://via.placeholder.com/52x54");
   background-size: 52px 54px;
   height: 54px;
   width: 52px;
@@ -327,7 +330,7 @@ html.no-svg .ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
 
 .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookair_dark_large.svg");
+  background-image: url("https://via.placeholder.com/52x54");
   background-size: 52px 54px;
   height: 54px;
   width: 52px;
@@ -336,7 +339,7 @@ html.no-svg .ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
 /* line 238, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-air .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookair_dark_large.png");
+  background-image: url("https://via.placeholder.com/52x54");
   background-size: 52px 54px;
   height: 54px;
   width: 52px;
@@ -353,7 +356,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-air .ac-
 
 .ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookpro_large.svg");
+  background-image: url("https://via.placeholder.com/58x54");
   background-size: 58px 54px;
   height: 54px;
   width: 58px;
@@ -362,7 +365,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-air .ac-
 /* line 258, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookpro_large.png");
+  background-image: url("https://via.placeholder.com/58x54");
   background-size: 58px 54px;
   height: 54px;
   width: 58px;
@@ -372,7 +375,7 @@ html.no-svg .ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
 
 .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookpro_dark_large.svg");
+  background-image: url("https://via.placeholder.com/58x54");
   background-size: 58px 54px;
   height: 54px;
   width: 58px;
@@ -381,7 +384,7 @@ html.no-svg .ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
 /* line 273, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-pro .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macbookpro_dark_large.png");
+  background-image: url("https://via.placeholder.com/58x54");
   background-size: 58px 54px;
   height: 54px;
   width: 58px;
@@ -398,7 +401,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-pro .ac-
 
 .ac-familybrowser-item.imac .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/imac_large.svg");
+  background-image: url("https://via.placeholder.com/48x54");
   background-size: 48px 54px;
   height: 54px;
   width: 48px;
@@ -407,7 +410,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.macbook-pro .ac-
 /* line 293, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-item.imac .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/imac_large.png");
+  background-image: url("https://via.placeholder.com/48x54");
   background-size: 48px 54px;
   height: 54px;
   width: 48px;
@@ -417,7 +420,7 @@ html.no-svg .ac-familybrowser-item.imac .ac-familybrowser-icon {
 
 .ac-familybrowser-theme-dark .ac-familybrowser-item.imac .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/imac_dark_large.svg");
+  background-image: url("https://via.placeholder.com/48x54");
   background-size: 48px 54px;
   height: 54px;
   width: 48px;
@@ -426,7 +429,7 @@ html.no-svg .ac-familybrowser-item.imac .ac-familybrowser-icon {
 /* line 308, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.imac .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/imac_dark_large.png");
+  background-image: url("https://via.placeholder.com/48x54");
   background-size: 48px 54px;
   height: 54px;
   width: 48px;
@@ -443,7 +446,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.imac .ac-familyb
 
 .ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macpro_large.svg");
+  background-image: url("https://via.placeholder.com/21x54");
   background-size: 21px 54px;
   height: 54px;
   width: 21px;
@@ -452,7 +455,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.imac .ac-familyb
 /* line 328, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macpro_large.png");
+  background-image: url("https://via.placeholder.com/21x54");
   background-size: 21px 54px;
   height: 54px;
   width: 21px;
@@ -462,7 +465,7 @@ html.no-svg .ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
 
 .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macpro_dark_large.svg");
+  background-image: url("https://via.placeholder.com/21x54");
   background-size: 21px 54px;
   height: 54px;
   width: 21px;
@@ -471,7 +474,7 @@ html.no-svg .ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
 /* line 343, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-pro .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macpro_dark_large.png");
+  background-image: url("https://via.placeholder.com/21x54");
   background-size: 21px 54px;
   height: 54px;
   width: 21px;
@@ -488,7 +491,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-pro .ac-fami
 
 .ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macmini_large.svg");
+  background-image: url("https://via.placeholder.com/28x54");
   background-size: 28px 54px;
   height: 54px;
   width: 28px;
@@ -497,7 +500,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-pro .ac-fami
 /* line 363, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macmini_large.png");
+  background-image: url("https://via.placeholder.com/28x54");
   background-size: 28px 54px;
   height: 54px;
   width: 28px;
@@ -507,7 +510,7 @@ html.no-svg .ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
 
 .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macmini_dark_large.svg");
+  background-image: url("https://via.placeholder.com/28x54");
   background-size: 28px 54px;
   height: 54px;
   width: 28px;
@@ -516,7 +519,7 @@ html.no-svg .ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
 /* line 378, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-mini .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/macmini_dark_large.png");
+  background-image: url("https://via.placeholder.com/28x54");
   background-size: 28px 54px;
   height: 54px;
   width: 28px;
@@ -526,7 +529,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-mini .ac-fam
 
 .ac-familybrowser-item.accessories .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_acc_large.svg");
+  background-image: url("https://via.placeholder.com/28x54");
   background-size: 28px 54px;
   height: 54px;
   width: 28px;
@@ -535,7 +538,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.mac-mini .ac-fam
 /* line 393, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-item.accessories .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_acc_large.png");
+  background-image: url("https://via.placeholder.com/29x54");
   background-size: 29px 54px;
   height: 54px;
   width: 29px;
@@ -545,7 +548,7 @@ html.no-svg .ac-familybrowser-item.accessories .ac-familybrowser-icon {
 
 .ac-familybrowser-theme-dark .ac-familybrowser-item.accessories .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_acc_dark_large.svg");
+  background-image: url("https://via.placeholder.com/29x54");
   background-size: 29px 54px;
   height: 54px;
   width: 29px;
@@ -554,7 +557,7 @@ html.no-svg .ac-familybrowser-item.accessories .ac-familybrowser-icon {
 /* line 408, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.accessories .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_acc_dark_large.png");
+  background-image: url("https://via.placeholder.com/29x54");
   background-size: 29px 54px;
   height: 54px;
   width: 29px;
@@ -571,7 +574,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.accessories .ac-
 
 .ac-familybrowser-item.osx .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_osx_large.svg");
+  background-image: url("https://via.placeholder.com/30x54");
   background-size: 30px 54px;
   height: 54px;
   width: 30px;
@@ -580,7 +583,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.accessories .ac-
 /* line 428, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-item.osx .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_osx_large.png");
+  background-image: url("https://via.placeholder.com/30x54");
   background-size: 30px 54px;
   height: 54px;
   width: 30px;
@@ -590,7 +593,7 @@ html.no-svg .ac-familybrowser-item.osx .ac-familybrowser-icon {
 
 .ac-familybrowser-theme-dark .ac-familybrowser-item.osx .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_osx_dark_large.svg");
+  background-image: url("https://via.placeholder.com/30x54");
   background-size: 30px 54px;
   height: 54px;
   width: 30px;
@@ -599,7 +602,7 @@ html.no-svg .ac-familybrowser-item.osx .ac-familybrowser-icon {
 /* line 443, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.osx .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_osx_dark_large.png");
+  background-image: url("https://via.placeholder.com/30x54");
   background-size: 30px 54px;
   height: 54px;
   width: 30px;
@@ -616,7 +619,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.osx .ac-familybr
 
 .ac-familybrowser-item.compare .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_comp_large.svg");
+  background-image: url("https://via.placeholder.com/70x54");
   background-size: 70px 54px;
   height: 54px;
   width: 70px;
@@ -625,7 +628,7 @@ html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.osx .ac-familybr
 /* line 463, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-item.compare .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_comp_large.png");
+  background-image: url("https://via.placeholder.com/70x54");
   background-size: 70px 54px;
   height: 54px;
   width: 70px;
@@ -635,7 +638,7 @@ html.no-svg .ac-familybrowser-item.compare .ac-familybrowser-icon {
 
 .ac-familybrowser-theme-dark .ac-familybrowser-item.compare .ac-familybrowser-icon {
   background-repeat: no-repeat;
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_comp_dark_large.svg");
+  background-image: url("https://via.placeholder.com/70x54");
   background-size: 70px 54px;
   height: 54px;
   width: 70px;
@@ -644,7 +647,7 @@ html.no-svg .ac-familybrowser-item.compare .ac-familybrowser-icon {
 /* line 478, ../../app/styles/main.scss */
 
 html.no-svg .ac-familybrowser-theme-dark .ac-familybrowser-item.compare .ac-familybrowser-icon {
-  background-image: url("http://images.apple.com/v/mac/home/s/home/images/familybrowser/mac_comp_dark_large.png");
+  background-image: url("https://via.placeholder.com/70x54");
   background-size: 70px 54px;
   height: 54px;
   width: 70px;
