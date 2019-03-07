@@ -14,10 +14,7 @@ KiwiSlider.prototype = {
 
 		var touch_support = !!(("ontouchstart" in window) || window.DocumentTouch && document instanceof window.DocumentTouch);
 
-		if(touch_support){
-			$('html').addClass("touch");
-			return;
-		}
+		
 
 
 		$.extend(options,arguments[1]);
@@ -25,6 +22,13 @@ KiwiSlider.prototype = {
 		kiwi = $('#'+arguments[0]);
 		control = kiwi.find('.kiwi-control');
 		items = kiwi.find('.kiwi-items');
+
+		if(touch_support){
+			$('html').addClass("touch");
+			items.removeClass('hidden');
+			return;
+		}
+
 		this.index = 0;
 		this.old_index = 0;
 		this.static_width = 724;
