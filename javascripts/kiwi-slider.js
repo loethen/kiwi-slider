@@ -146,7 +146,7 @@ KiwiSlider.prototype = {
 
 				});
 
-				_this.itemMove(olditem, d);
+				// _this.itemMove(olditem, d);
 
 				_this.caretMove(left,scale);
 
@@ -169,12 +169,12 @@ KiwiSlider.prototype = {
 			if(value == "is-after"){
 				setTimeout(function(){
 					that.removeClass(value)
-				},index*80)
+				},index*60)
 			}else{
 				var array = _this.bool_h ? _this.range(0,li.length) : _this.range(0,li.length).reverse();
 				setTimeout(function(){
 					that.removeClass(value)
-				},array[index]*80)
+				},array[index]*60)
 			}
 		})
 	},
