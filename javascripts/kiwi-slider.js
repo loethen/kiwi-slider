@@ -14,9 +14,6 @@ KiwiSlider.prototype = {
 
 		var touch_support = !!(("ontouchstart" in window) || window.DocumentTouch && document instanceof window.DocumentTouch);
 
-		
-
-
 		$.extend(options,arguments[1]);
 
 		kiwi = $('#'+arguments[0]);
