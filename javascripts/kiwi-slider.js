@@ -73,7 +73,6 @@ KiwiSlider.prototype = {
 
 		_this.item.each(function(){
 			if(this.itemindex < _this.index){
-				console.log(this.itemindex)
 				_this.doTranslate($(this),(-1-this.itemindex) * (_this.bool_h ? _this.static_height : _this.static_width) );
 			}
 
